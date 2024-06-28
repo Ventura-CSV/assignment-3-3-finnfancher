@@ -16,9 +16,8 @@ def main():
     if(email.find("@") < 0):
         result = False
         
-    slicedEmail = slice(email.find("@"), len(email))
 
-    if(slicedEmail.find(".") < 0):
+    if(email[email.find("@"):len(email)].find(".") < 0):
         result = False
 
         
