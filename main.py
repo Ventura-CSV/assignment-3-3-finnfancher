@@ -20,7 +20,7 @@ def main():
     if(email[email.find("@"):len(email)].find(".") < 0):
         result = False
 
-        
+    print(result)
     ########################################
     # Do not delete the return statement
     ########################################
