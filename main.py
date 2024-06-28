@@ -6,7 +6,10 @@ def main():
     ########################################
     """
     result = True
-
+    
+    if(email[0:1].isalpha() == False):
+        result = False
+        
     ########################################
     # Do not delete the return statement
     ########################################
