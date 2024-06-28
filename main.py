@@ -10,9 +10,16 @@ def main():
     if(email[0:1].isalpha() == False):
         result = False
         
-    if(email.length() < 6 or email.length() > 29):
+    if(len(email) < 6 or len(email) > 29):
+        result = False
+    
+    if(email.find("@") < 0):
         result = False
         
+    slicedEmail = slice(email.find("@"), len(email))
+
+    if(slicedEmail.find(".") < 0):
+        result = False
 
         
     ########################################
